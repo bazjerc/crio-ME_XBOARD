@@ -1,0 +1,44 @@
+// Media query mixin
+
+@mixin media($max-width) {
+    @media screen and (max-width: $max-width) {
+      @content;
+    }
+  }
+  
+  // Button animation
+  
+  @keyframes button-animation-prev {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-(0.625 * 0.4rem));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes button-animation-next {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0.625 * 0.4rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-prev {
+    animation-duration: 0.12s;
+    animation-name: button-animation-prev;
+  }
+  
+  .animate-next {
+    animation-duration: 0.12s;
+    animation-name: button-animation-next;
+  }
+  

@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 0.625 * 3.5rem 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}

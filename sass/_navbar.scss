@@ -1,0 +1,28 @@
+.navbar {
+    padding: 0.625 * 2.25rem 0;
+    border-bottom: 1px solid #e1e4e8;
+    .navbar-brand {
+      display: block;
+      position: relative;
+      font-size: 0.625 * 2.3rem;
+      font-weight: 600;
+      letter-spacing: 0.625 * 0.2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.625 * -0.5rem;
+        width: 0.625 * 2.7rem;
+        height: 0.625 * 0.9rem;
+        border-radius: 100px;
+        background: linear-gradient(to right, #e537b9, #c040df);
+        transition: all 0.2s;
+        z-index: -1;
+      }
+      &:hover::before {
+        width: 0.625 * 5.5rem;
+        top: 0.625 * 3.4rem;
+      }
+    }
+  }
+  

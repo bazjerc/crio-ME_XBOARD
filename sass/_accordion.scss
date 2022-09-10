@@ -1,0 +1,32 @@
+.accordion {
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-body-padding-x: calc(0.625 * 1rem);
+    .accordion-item {
+      border: none;
+      &:not(:last-child) {
+        margin-bottom: 0.625 * 2.5rem;
+      }
+    }
+    .accordion-header {
+      font-size: 0.625 * 1.6rem;
+      font-weight: 700;
+    }
+    .accordion-btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      color: #737373;
+      background-color: initial;
+      // Rotate drop-down icon on accordion show/collapse
+      &:not(.collapsed) > .accordion-btn-icon {
+        transform: rotate(-180deg);
+      }
+    }
+    .accordion-btn-icon {
+      margin-right: 0.625 * 1rem;
+      font-size: 0.625 * 1.7rem;
+      line-height: normal;
+      transition: transform 0.2s;
+    }
+  }
+  

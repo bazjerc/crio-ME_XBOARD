@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8"
+  },
+  "scripts": {
+    "sassw": "sass --watch ./sass/style.scss:./resources/css/index.css --style=compressed --no-source-map"
   }
 }

@@ -1,0 +1,28 @@
+.carousel {
+    .carousel-inner {
+      width: calc(100% - (0.625 * 7rem));
+      margin: 0 auto;
+    }
+    .carousel-next,
+    .carousel-prev {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0.625 * 2rem;
+      background-color: #f6f8fa;
+      border: none;
+      border-radius: 100px;
+    }
+    .carousel-prev {
+      left: 0;
+    }
+    .carousel-next {
+      right: 0;
+    }
+    .carousel-prev-icon,
+    .carousel-next-icon {
+      font-size: 0.625 * 1.7rem;
+      color: #737373;
+    }
+  }
+  
